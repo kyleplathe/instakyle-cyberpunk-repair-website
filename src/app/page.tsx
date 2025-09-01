@@ -215,7 +215,7 @@ export default function Home() {
                 <div className="w-4 h-4 bg-neon-green rounded-full"></div>
                 <div className="md:w-1/3 text-left">
                   <h3 className="text-2xl font-bold neon-text neon-green">2017 - Cloud Hustle</h3>
-                  <p className="text-gray-300">Kyle realized online presence alone wasn't enough to complete the customer relationship loop.</p>
+                  <p className="text-gray-300">Kyle realized online presence alone wasn&apos;t enough to complete the customer relationship loop.</p>
                 </div>
               </motion.div>
 
@@ -242,11 +242,11 @@ export default function Home() {
                 className="flex flex-col md:flex-row items-center gap-8"
               >
                 <div className="md:w-1/3 text-right">
-                  <p className="text-gray-400">Building on momentum, Kyle began doing live repairs and accessory sales at local farmer's markets.</p>
+                  <p className="text-gray-400">Building on momentum, Kyle began doing live repairs and accessory sales at local farmer&apos;s markets.</p>
                 </div>
                 <div className="w-4 h-4 bg-neon-purple rounded-full"></div>
                 <div className="md:w-1/3 text-left">
-                  <h3 className="text-2xl font-bold neon-text neon-purple">2019 - Bitcoin & Markets</h3>
+                  <h3 className="text-2xl font-bold neon-text neon-purple">2019 - Bitcoin &amp; Markets</h3>
                   <p className="text-gray-300">On June 21, 2019, Instakyle accepted its first Bitcoin payment—years before it was cool.</p>
                 </div>
               </motion.div>
@@ -258,7 +258,7 @@ export default function Home() {
                 className="flex flex-col md:flex-row items-center gap-8"
               >
                 <div className="md:w-1/3 text-right">
-                  <h3 className="text-2xl font-bold neon-text neon-blue">2025 - Relaunch & Level-Up</h3>
+                  <h3 className="text-2xl font-bold neon-text neon-blue">2025 - Relaunch &amp; Level-Up</h3>
                   <p className="text-gray-300">Armed with new micro-soldering skills and focus on gaming console repairs.</p>
                 </div>
                 <div className="w-4 h-4 bg-neon-blue rounded-full"></div>
@@ -288,8 +288,8 @@ export default function Home() {
             </p>
             <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg border border-yellow-400/30">
               <p className="text-lg text-gray-300">
-                "We believe in the future of decentralized finance and building wealth outside the traditional banking system. 
-                Bitcoin represents freedom, transparency, and a hedge against inflation."
+                &ldquo;We believe in the future of decentralized finance and building wealth outside the traditional banking system. 
+                Bitcoin represents freedom, transparency, and a hedge against inflation.&rdquo;
               </p>
             </div>
           </motion.div>
@@ -308,7 +308,7 @@ export default function Home() {
               Join the Resistance
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Ready to fight e-waste and empower your community? Let's connect.
+              Ready to fight e-waste and empower your community? Let&apos;s connect.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
@@ -363,7 +363,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <div className="bg-gray-800 rounded-lg p-3 mb-3">
-                <p className="text-sm text-gray-300">Hey there, tech warrior! I'm Glitch, your AI repair assistant. How can I help you today?</p>
+                <p className="text-sm text-gray-300">Hey there, tech warrior! I&apos;m Glitch, your AI repair assistant. How can I help you today?</p>
               </div>
               <input
                 type="text"

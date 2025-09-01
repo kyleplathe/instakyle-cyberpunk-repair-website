@@ -2,18 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Smartphone, 
-  Tablet, 
-  Watch, 
-  Gamepad2, 
-  Bitcoin, 
-  Zap, 
-  Shield, 
-  Users,
-  ArrowRight,
-  MessageCircle
-} from 'lucide-react';
 
 export default function Home() {
   const [showGlitch, setShowGlitch] = useState(false);
@@ -76,7 +64,9 @@ export default function Home() {
             className="inline-flex items-center space-x-2 bg-neon-green text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-400 transition-colors cursor-pointer"
           >
             <span>Start Your Repair</span>
-            <ArrowRight className="w-5 h-5" />
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </motion.div>
         </motion.div>
       </section>
@@ -98,7 +88,11 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg border border-neon-blue/30"
               >
-                <Shield className="w-16 h-16 text-neon-blue mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-4 neon-text neon-blue">Ethical Capitalism</h3>
                 <p className="text-gray-300">Small batch inventory, debt-free growth, and a Bitcoin strategic reserve for financial sovereignty.</p>
               </motion.div>
@@ -106,7 +100,11 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg border border-neon-green/30"
               >
-                <Zap className="w-16 h-16 text-neon-green mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-green rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-4 neon-text neon-green">Reduce eWaste</h3>
                 <p className="text-gray-300">Conserving precious earth minerals by extending device lifespans through expert repair.</p>
               </motion.div>
@@ -114,7 +112,11 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg border border-neon-pink/30"
               >
-                <Users className="w-16 h-16 text-neon-pink mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-pink rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-4 neon-text neon-pink">Empower Communities</h3>
                 <p className="text-gray-300">Technology education and access for all, building resilient local economies.</p>
               </motion.div>
@@ -141,7 +143,11 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-lg border border-neon-blue/30 text-center"
               >
-                <Smartphone className="w-16 h-16 text-neon-blue mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
                 <h3 className="text-xl font-bold mb-2">Phones</h3>
                 <p className="text-gray-400">Screen, battery, and component repairs</p>
               </motion.div>
@@ -149,7 +155,11 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-lg border border-neon-green/30 text-center"
               >
-                <Tablet className="w-16 h-16 text-neon-green mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-green rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
                 <h3 className="text-xl font-bold mb-2">Tablets</h3>
                 <p className="text-gray-400">Display and hardware repairs</p>
               </motion.div>
@@ -157,7 +167,11 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-lg border border-neon-pink/30 text-center"
               >
-                <Watch className="w-16 h-16 text-neon-pink mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-pink rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
                 <h3 className="text-xl font-bold mb-2">Watches</h3>
                 <p className="text-gray-400">Smartwatch and fitness tracker repairs</p>
               </motion.div>
@@ -165,106 +179,13 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-lg border border-neon-purple/30 text-center"
               >
-                <Gamepad2 className="w-16 h-16 text-neon-purple mx-auto mb-4" />
+                <div className="w-16 h-16 bg-neon-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+                  </svg>
+                </div>
                 <h3 className="text-xl font-bold mb-2">Gaming</h3>
                 <p className="text-gray-400">Console and controller repairs</p>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Story Timeline */}
-      <section id="story" className="relative z-10 px-6 py-20">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 neon-text neon-pink">
-              Our Evolution
-            </h2>
-            <div className="space-y-8 mt-12">
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row items-center gap-8"
-              >
-                <div className="md:w-1/3 text-right">
-                  <h3 className="text-2xl font-bold neon-text neon-blue">2016 - The Beginning</h3>
-                  <p className="text-gray-300">Instakyle iPhone Repair founded by Kyle Plathe, a Minnesota native who loves tech.</p>
-                </div>
-                <div className="w-4 h-4 bg-neon-blue rounded-full"></div>
-                <div className="md:w-1/3 text-left">
-                  <p className="text-gray-400">Using the internet as his classroom, Kyle dove into the repair world, connecting with peers and mentors across the U.S. and beyond.</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 50 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row items-center gap-8"
-              >
-                <div className="md:w-1/3 text-right">
-                  <p className="text-gray-400">Operating as a fully cloud-based service made growth efficient, but something was missing—real community connection.</p>
-                </div>
-                <div className="w-4 h-4 bg-neon-green rounded-full"></div>
-                <div className="md:w-1/3 text-left">
-                  <h3 className="text-2xl font-bold neon-text neon-green">2017 - Cloud Hustle</h3>
-                  <p className="text-gray-300">Kyle realized online presence alone wasn&apos;t enough to complete the customer relationship loop.</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row items-center gap-8"
-              >
-                <div className="md:w-1/3 text-right">
-                  <h3 className="text-2xl font-bold neon-text neon-pink">2018 - California Reset</h3>
-                  <p className="text-gray-300">Mobile street vending repairs via electric bike, tall flag, and backpack of tools.</p>
-                </div>
-                <div className="w-4 h-4 bg-neon-pink rounded-full"></div>
-                <div className="md:w-1/3 text-left">
-                  <p className="text-gray-400">First bike deployment on July 21, 2018 at the Southpark Summer Walkabout. Later moved into Ocean Beach office.</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 50 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row items-center gap-8"
-              >
-                <div className="md:w-1/3 text-right">
-                  <p className="text-gray-400">Building on momentum, Kyle began doing live repairs and accessory sales at local farmer&apos;s markets.</p>
-                </div>
-                <div className="w-4 h-4 bg-neon-purple rounded-full"></div>
-                <div className="md:w-1/3 text-left">
-                  <h3 className="text-2xl font-bold neon-text neon-purple">2019 - Bitcoin &amp; Markets</h3>
-                  <p className="text-gray-300">On June 21, 2019, Instakyle accepted its first Bitcoin payment—years before it was cool.</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row items-center gap-8"
-              >
-                <div className="md:w-1/3 text-right">
-                  <h3 className="text-2xl font-bold neon-text neon-blue">2025 - Relaunch &amp; Level-Up</h3>
-                  <p className="text-gray-300">Armed with new micro-soldering skills and focus on gaming console repairs.</p>
-                </div>
-                <div className="w-4 h-4 bg-neon-blue rounded-full"></div>
-                <div className="md:w-1/3 text-left">
-                  <p className="text-gray-400">The brand is now sharper, geekier, and more mission-driven than ever.</p>
-                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -279,7 +200,11 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Bitcoin className="w-24 h-24 text-yellow-400 mx-auto mb-6" />
+            <div className="w-24 h-24 bg-yellow-400 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg className="w-12 h-12 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 neon-text text-yellow-400">
               Bitcoin Accepted
             </h2>
@@ -348,7 +273,9 @@ export default function Home() {
           onClick={() => setShowChat(!showChat)}
           className="bg-neon-pink text-black p-4 rounded-full shadow-lg hover:bg-pink-400 transition-colors"
         >
-          <MessageCircle className="w-6 h-6" />
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
         </motion.button>
         
         {showChat && (

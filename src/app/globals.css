@@ -14,13 +14,6 @@
   --glitch-blue: #0040ff;
 }
 
-@theme inline {
-  --color-background: var(--dark-bg);
-  --color-foreground: var(--text-primary);
-  --font-sans: 'Orbitron', 'Rajdhani', monospace;
-  --font-mono: 'Courier New', monospace;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -33,7 +26,7 @@ body {
   overflow-x: hidden;
   background: var(--dark-bg);
   color: var(--text-primary);
-  font-family: var(--font-sans);
+  font-family: 'Courier New', monospace;
 }
 
 body {
@@ -94,10 +87,21 @@ body {
     0 0 20px currentColor;
 }
 
-.neon-blue { color: var(--neon-blue); }
-.neon-pink { color: var(--neon-pink); }
-.neon-green { color: var(--neon-green); }
-.neon-purple { color: var(--neon-purple); }
+.neon-blue { 
+  color: var(--neon-blue); 
+}
+
+.neon-pink { 
+  color: var(--neon-pink); 
+}
+
+.neon-green { 
+  color: var(--neon-green); 
+}
+
+.neon-purple { 
+  color: var(--neon-purple); 
+}
 
 /* Circuit Board Background */
 .circuit-bg {
@@ -112,8 +116,12 @@ body {
 
 /* Floating Animation */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
 }
 
 .float {
@@ -122,8 +130,12 @@ body {
 
 /* Pulse Animation */
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.5; 
+  }
 }
 
 .pulse {
@@ -132,8 +144,12 @@ body {
 
 /* Scan Line Effect */
 @keyframes scanline {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
+  0% { 
+    transform: translateY(-100%); 
+  }
+  100% { 
+    transform: translateY(100vh); 
+  }
 }
 
 .scanline {
